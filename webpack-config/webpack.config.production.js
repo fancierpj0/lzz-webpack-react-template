@@ -13,10 +13,27 @@ module.exports = {
   //最佳化，最优化
   optimization: {
     //minimize:使减少(或缩小)到最低限度，使减至最少，使缩到最小：
+    //默认值为true(没错是true,但需要minimizer支持)
+    //minimize:true
     minimizer: [
-      new UglifyjsWebpackPlugin()
+      new UglifyjsWebpackPlugin({
+        cache:false //启用缓存
+        ,parallel:true //使用多进程运行改进编译速度
+        ,sourceMap:true //生成sourceMap映射文件
+        // ,keep_classnames:true
+        // ,keep_fnames:true
+      })
       , new OptimizeCssAssetsWebpackPlugin()
     ]
+
+    ,splitChunks:{
+      //参看README.md
+    }
+
+    //将runtime代码单独提取出来
+    //大概1.4KB多点
+    //不过还是可以提取传来，可以享受浏览器的缓存
+    // ,runtimeChunk:true
   }
 
   , module: {

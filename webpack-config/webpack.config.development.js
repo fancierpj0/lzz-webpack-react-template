@@ -21,6 +21,12 @@ module.exports = {
   //   ,aggregateTimeout:500
   // }
 
+  ,optimization: {
+    //minimize:使减少(或缩小)到最低限度，使减至最少，使缩到最小：
+    //默认值为true(没错是true,但需要minimizer支持)
+    minimize:false
+  }
+
   , module: {
     rules: [
       {

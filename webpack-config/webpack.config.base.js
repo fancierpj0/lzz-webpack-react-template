@@ -12,7 +12,8 @@ module.exports = {
     //这里设置publicPath
     // ，会将所有html里的路径(js的src、css的href、img的src)
     // 和backgroundのurl 都加上 '/public'的前缀
-    , publicPath: '/public'
+    //以及html本身的请求路径加上 '/public'
+    // , publicPath: '/public'
   }
 
   , resolve: {
