@@ -91,7 +91,7 @@ module.exports = {
       manifest:path.resolve(__dirname,'../dist/react_family.manifest.json')
     })
 
-    // 用于启动 HMR 时可以显示模块的相对路径
+    // 用于启动 HMR 时可以显示模块的相对路径，貌似已经被内置
     ,new webpack.NamedModulesPlugin()
     // Hot Module Replacement 的插件
     ,new webpack.HotModuleReplacementPlugin()

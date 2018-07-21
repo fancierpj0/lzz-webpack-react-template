@@ -1,17 +1,15 @@
 import React from 'react';
-import Child from './Child';
 
 export default class App extends React.Component {
+  //test hot-module
   state = {
-    a: '1'
+    a: '234'
   };
 
   render() {
     return (
       <div>
         {this.state.a}
-        {this.props.children}
-        <Child/>
       </div>
     )
   }
