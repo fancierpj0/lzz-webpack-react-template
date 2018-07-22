@@ -29,7 +29,7 @@ function render() {
 render();
 
 if (module.hot && IS_DEV) {
-  
+
   // module.hot.accept('./store',() => {
   //   render();
   // });

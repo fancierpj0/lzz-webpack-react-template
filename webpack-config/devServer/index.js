@@ -7,8 +7,18 @@ module.exports = {
   , port: 3000
   , host: 'localhost'
 
+  //是否自动弹出浏览器
+  ,open:true
+
+  ,overlay:{
+    //webpack编译时若存在错误，直接显示在页面上
+    errors:true
+  }
+
   // dev server 的配置要启动 hot，或者在命令行中带参数开启
   ,hot: true
+  //禁止全局刷新
+  // ,hotOnly:true
 
   //默认情况下，没有修改output.publicPath值，只需要设置webpack-dev-server的historyApiFallback为true，即回退到 /index.html
   ,historyApiFallback:true
