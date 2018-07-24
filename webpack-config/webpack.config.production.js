@@ -105,6 +105,6 @@ module.exports = {
     // ,new CleanWebpackPlugin([path.resolve(__dirname, '../dist')])
 
     //在打包的文件顶部插入文字
-    , new webpack.BannerPlugin('code&design by Fancier')
+    , new webpack.BannerPlugin('code&design by Cris_冷峥子')
   ]
 };
