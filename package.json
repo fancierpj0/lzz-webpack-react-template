@@ -45,7 +45,15 @@
     "redux-immutable": "^4.0.0",
     "redux-saga": "^0.16.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fancierpj0/lzz-webpack-react-template.git"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fancierpj0/lzz-webpack-react-template/issues"
+  },
+  "homepage": "https://github.com/fancierpj0/lzz-webpack-react-template#readme"
 }
